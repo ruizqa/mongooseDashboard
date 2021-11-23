@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></link>
+</head>
+<body>
+    <nav class="teal">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">&nbsp Mongoose Dashboard</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container section">
+        <div class="row">
+        <h3 class="center">Add Elephant</h3>
+        <form method="POST" action="/elephants" class="col m6 offset-m3"> 
+            <div class="input-field col s12">
+                <input type="text" name="name" class="validate"/>
+                <label for="name" >Name:</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="number" name="age" class="validate"/>
+                <label for="age">Age:</label>
+            </div>
+            <div class="input-field col s12">
+                <p>
+                    <label>
+                      <input name="type" type="radio" value="Asian" />
+                      <span>Asian</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="type" type="radio" value="African" />
+                      <span>African</span>
+                    </label>
+                  </p>
+            </div>
+
+            <div class="input-field col s12 center">
+                <input type="submit" class="btn" value="Add"/>
+            </div>
+        </form >
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+

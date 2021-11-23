@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></link>
+</head>
+<body>
+    <nav class="teal">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">&nbsp Mongoose Dashboard</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/elephants/new">Add a new elephant</a></li>
+            <li><a href="/">Home</a></li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="section container">
+        <div class= "col m6 offset-m3">
+        <table class="stripped highlight centered">
+            <thead class="teal lighten-3">
+              <tr>
+                  <th>Field</th>
+                  <th>Value</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+             
+              <tr>
+                <td>Name</td>
+                <td><%= elephant.name %></td>
+              </tr>
+              <tr>
+                <td>Age</td>
+                <td><%= elephant.age %></td>
+              </tr>
+              <tr>
+                <td>Type</td>
+                <td><%= elephant.type %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
